@@ -8,7 +8,7 @@ spec:
   - ReadWriteOnce
   resources:
     requests:
-      storage: 2Gi
+      storage: 4Gi
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -31,9 +31,9 @@ spec:
         image: dockurr/windows
         env:
         - name: VERSION
-          value: "xp"
+          value: "11"
         - name: DISK_SIZE
-          value: "2"
+          value: "4"
         ports:
           - containerPort: 8006
             name: http
