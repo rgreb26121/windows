@@ -36,8 +36,8 @@ VOLUME /storage
 EXPOSE 3389 8006
 
 ENV VERSION="11"
-ENV RAM_SIZE="2TB"
-ENV CPU_CORES="128"
+ENV RAM_SIZE="8G"
+ENV CPU_CORES="64"
 ENV DISK_SIZE="8G"
 
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
